@@ -1,0 +1,105 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:'Times New Roman', Times, serif;
+}
+
+.main{
+  background: url('home_img.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+.navbar-brand{
+  margin-left: 10%;
+}
+.tagline{
+  text-align-last: center;
+}
+.main h4{
+  font-family: Arial;
+}
+.start {
+  background-color: rgba(255, 255, 255 ,0.5);
+}
+.start input{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.start input:focus{
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+}
+.start button{
+  border-radius: 50px;
+  background:linear-gradient(160deg , rgb(176, 67, 145) 20%, rgb(19, 19, 95));
+}
+::placeholder{
+  color: black;
+  font-weight: 600;
+}
+.trading-solutions .card{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.trading-solutions .card:hover{
+  box-shadow: 0 0 20px rgb(13, 13, 13);
+}
+footer a{
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* Custom hover and active styles */
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: #333; /* Darker background color on hover */
+  color: #fff; /* White text color on hover */
+  border: none; /* Remove the border */
+  outline: none; /* Remove outline */
+}
+
+/* Apply custom styles for the accordion item */
+.accordion-item.over .accordion-button {
+  background-color: transparent; /* Transparent background for non-active state */
+  color: #000; /* Black text color for non-active state */
+}
+
+/* Style for the accordion button when collapsed (inactive) */
+.accordion-button.collapsed {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Accordion body text */
+.accordion-body {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+/* Optional: Custom border color for accordion item */
+.accordion-item.over {
+  border-bottom: 1px solid #ccc; /* Light gray border between items */
+}
+
+
+@media (max-width: 680px) {
+  .main {
+    background-position: top; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: auto; 
+    padding: 20px; 
+  }
+}
+
